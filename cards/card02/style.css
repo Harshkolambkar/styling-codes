@@ -1,0 +1,146 @@
+#product-details-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#product-details-overlay .card {
+    max-width: 500px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10%; /* Added to center the card vertically */
+}
+
+
+#product-details-overlay.show {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#product-details-overlay .card {
+    max-width: 500px;
+    width: 90%;
+    margin: 0 auto; /* Added to center the card horizontally */
+}
+
+#product-details-overlay .card-header {
+	position: relative;
+	padding: 15px;
+	background-color: #f8f9fa;
+}
+
+#product-details-overlay .btn-close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 1.2rem;
+	color: #000;
+	background-color: transparent;
+	border: none;
+}
+
+#product-details-overlay .card-body {
+	padding: 20px;
+}
+
+#product-details-overlay .card-title {
+	margin-bottom: 10px;
+	font-size: 1.5rem;
+}
+
+#product-details-overlay .card-text {
+	margin-bottom: 20px;
+}
+
+#product-details-overlay img {
+	max-width: 100%;
+	height: auto;
+}
+
+.product-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+/* Normal Card Style */
+.card {
+    background-color: teal;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 14px;
+}
+
+/* Card Style for Product Overlay */
+.product-container .card {
+    background-color:purple;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: white;
+    overflow: hidden;
+    position: relative;
+    z-index: 9999;
+}
+
+.product-container .card-body {
+    padding: 20px;
+}
+
+.product-container .card-img-top {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+}
+
+.product-container .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-container .card-text {
+    font-size: 14px;
+}
+
+.fa-times {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
